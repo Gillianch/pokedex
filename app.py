@@ -21,3 +21,4 @@ data = json.load(pokedex)
 def names():
     for pokemon in data:
         print(pokedex["name"]["english"])
+names()
