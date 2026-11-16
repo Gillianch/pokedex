@@ -17,7 +17,38 @@ data = json.load(pokedex)
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
+
+
+
+
+
+# def printnames():
+#     for pokemon in data:
+#         print(pokemon['name']['english'])
+# printnames()
+
+
+
+
+
+
+print("Choose Language, either english, japanese, chinese, or french")
+language = str(input())
+
+
+
 def printnames():
     for pokemon in data:
-        print(pokedex["name"]["english"])
+        print(pokemon['name'][language])
 printnames()
+
+
+
+
+
+
+print("type a pokemon type")
+chosentype = str(input())
+
+for pokemon in data:
+    print(pokemon[chosentype])
