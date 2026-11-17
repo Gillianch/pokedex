@@ -28,7 +28,7 @@ data = json.load(pokedex)
 # printnames()
 
 
-
+""" 
 
 
 
@@ -43,12 +43,16 @@ def printnames():
 printnames()
 
 
+ """
 
 
+def pokemontypes():
+    print("type a pokemon type")
+    chosentype = str(input())
 
-
-print("type a pokemon type")
-chosentype = str(input())
-
-for pokemon in data:
-    print(pokemon[chosentype])
+    for pokemon in data:
+        if chosentype == "type":
+            print(pokemon['name']['english'])
+        elif "type" == None:
+            print("No data values matched the chosen type")
+pokemontypes()
