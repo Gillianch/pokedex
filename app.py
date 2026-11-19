@@ -52,10 +52,9 @@ def pokemontypes():
     for pokemon in data:
         if chosentype == "type":
             print(pokemon["name"]["english"])
-
-        elif "type" == None:
-            print("No data values matched the chosen type")
+""" 
+        elif chosentype != "type":
+            print("No data values matched the chosen type") """
 pokemontypes()
-
 
 
