@@ -52,13 +52,52 @@ def pokemontypes():
     yay = "no"
 
     for pokemon in data:
-        if better_chosentype == (pokemon["type"]):
+        if better_chosentype == pokemon["type"]:
             print(pokemon["name"]["english"])
             yay == "yes"
 
-        elif yay == "no" :
+        elif yay == "no":
             print("No data values matched the chosen type")
             break
 pokemontypes()
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" 
+
+users = [
+    {"name": "Alice", "role" : "admin"},
+    {"name": "Bob", "role": "admin"},
+]
+
+
+for user in users:
+    try:
+        if user["role"] == "admin":
+            print(user)
+    except KeyError:
+        continue """
