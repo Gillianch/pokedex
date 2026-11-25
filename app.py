@@ -49,19 +49,18 @@ def pokemontypes():
     print("type a pokemon type")
     chosentype = str(input())
     better_chosentype = chosentype.capitalize()
-    yay = "no"
+    yay = False
 
     for pokemon in data:
         if better_chosentype == pokemon["type"]:
             print(pokemon["name"]["english"])
-            yay == "yes"
-
-        elif yay == "no":
-            print("No data values matched the chosen type")
+            yay = True
             break
+
+    if yay == False:
+            print("No data values matched the chosen type")
+
 pokemontypes()
-
-
 
 
 
